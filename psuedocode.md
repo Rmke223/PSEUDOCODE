@@ -39,6 +39,7 @@ End WHILE
 
 // conditions for message screen//
 
+While Power is on
 IF RATE is > 0 and ALT is between 8,000 ft and 9,000 ft
     DISPLAY on message screen "Put on Parachute"
 
@@ -52,7 +53,7 @@ ELSE IF RATE is < 0 and ALT is < 7,000 ft
     DISPLAY on message screen "Deploy Parachute" 
 ELSE
     DISPLAY Nothing
-END IF
+end WHILE
 
 Power Button OFF
 END program
